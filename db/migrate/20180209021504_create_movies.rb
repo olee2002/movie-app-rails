@@ -7,6 +7,7 @@ class CreateMovies < ActiveRecord::Migration[5.1]
       t.string :synopsis
       t.string :picture
       t.boolean :add_to_fav
+      t.integer :api_id
 
       t.timestamps
     end

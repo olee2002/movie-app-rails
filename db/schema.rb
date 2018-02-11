@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20180209024100) do
     t.string "synopsis"
     t.string "picture"
     t.boolean "add_to_fav"
+    t.integer "api_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
