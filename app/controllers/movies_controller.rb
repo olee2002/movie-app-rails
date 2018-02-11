@@ -1,5 +1,6 @@
 class MoviesController < ApplicationController
   def index
+    @movie = Movie.generate rand(2200000) 
     @movies = Movie.all
   end
 

@@ -10,7 +10,6 @@ class Movie < ApplicationRecord
 
     response = get "/?i=tt#{api_id}&apikey=cd771f9f"
     puts response
-    # movie_poster = response["sprites"]["front_default"]
 
     create!(title: response["Title"],
             genre: response["Genre"],
